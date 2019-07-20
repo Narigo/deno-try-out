@@ -1,8 +1,10 @@
-import { add } from "./add.ts";
+import { readFileStr } from "./read-file.ts";
 
-const myNumber: any = "hello";
-
-console.log(add(1, myNumber as number));
+(async () => {
+  const content = await readFileStr("./hello.txt");
+  
+  console.log(content);
+})();
 
 // import relatively
 // live serve, use it as a module?
