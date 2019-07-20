@@ -1,8 +1,10 @@
-import { getString } from "http://127.0.0.1:5500/src/server/online-get-string.ts";
+import { add } from "./add.ts";
 
-console.log(getString());
+const myNumber: any = "hello";
+
+console.log(add(1, myNumber as number));
 
 // import relatively
 // live serve, use it as a module?
 // use node code?
-// 
+//
