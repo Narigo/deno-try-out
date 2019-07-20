@@ -2,9 +2,9 @@ import { readFileStr } from "./read-file.ts";
 
 (async () => {
   try {
-    const content = await readFileStr("./hello.txt");
-    const content2 = await readFileStr("./hello2.txt");
-    const contentAgain = await readFileStr("./hello.txt");
+    const content = await readFileStr("./assets/hello.txt");
+    const content2 = await readFileStr("./assets/hello2.txt");
+    const contentAgain = await readFileStr("./assets/hello.txt");
 
     console.log(content);
     console.log(content2);
